@@ -57,7 +57,7 @@ body {
   margin-top: 5em;
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 886px) {
   .box {
   padding: 5em;
   }
