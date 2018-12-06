@@ -54,7 +54,7 @@
             <label class="label">Upload hier je foto</label>
             <div class="is-size-6">Je kan meerdere foto's uploaden</div>
             <div class="control">
-              <input type="hidden" role="uploadcare-uploader" name="fotos" data-images-only="false" data-multiple="true" /> 
+              <input type="hidden" role="uploadcare-uploader" name="fotos" capture="camera" data-images-only="true" data-multiple="true" /> 
             </div>
           </div>
 
@@ -76,7 +76,7 @@
 
     <script>
         UPLOADCARE_LOCALE = "nl";
-        UPLOADCARE_TABS = "file gphotos";
+        UPLOADCARE_TABS = "file camera gphotos";
         UPLOADCARE_PUBLIC_KEY = "ade64a3cc051c50d18df";
       </script>
       <script charset="utf-8" src="//ucarecdn.com/libs/widget/3.6.1/uploadcare.full.min.js"></script>
