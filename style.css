@@ -53,9 +53,14 @@ body {
   }
 
   /* form style */
-
 .box {
+  margin-top: 5em;
+}
+
+@media screen and (min-width: 786px) {
+  .box {
   padding: 5em;
+  }
 }
 
 input[type="submit"] {
