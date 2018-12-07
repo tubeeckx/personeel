@@ -5,7 +5,7 @@ body {
   /* hero style */
   .hero {
     background-image: url(https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1404&q=80);
-    background-repeat: no-repeat;
+  
     height: 100vh;
     font-family: 'Dokdo', cursive;
   }
