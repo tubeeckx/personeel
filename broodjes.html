@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bulma-0.7.2\css\bulma.css">
+    <title>Broodjes formulier</title>
+</head>
+<body>
+
+  <div class="box">
+     <form action="https://formspree.io/secretariaat@arknet.be" method="POST">
+    <div class="title">
+        Broodjes 
+    </div>
+    <div class="subtitle">
+        <p>Elke vrijdag worden er broodjes besteld. </p>
+        <p>Bestel voor 10u je broodje</p>
+    </div>     
+        <a class="button is-info" href="img/broodjestop1.pdf" style="padding:10px;font-size:1em;margin-left:0;">Menu broodjestop</a>
+  
+    <div class="subtitle">
+      <span class="asterix">*</span> verplicht
+    </div>
+
+    <div class="field">
+         <label class="label">Datum </label> 
+           <div class="control">
+              <input class="input" type="date" id="datePicker" name="datum" >
+           </div>
+    </div> 
+
+
+    <div class="field">
+        <label class="label">Welk broodje wil je? <span class="asterix">*</span> </label> 
+        <div class="control">
+          <input class="input" type="textarea" placeholder="bv. losse plaat" name="probleem" required>
+        </div>
+      </div> 
+
+    <div class="field">
+        <label class="label">Naam <span class="asterix">*</span></label>
+        <div class="control">
+          <input class="input" type="text" placeholder="bv. Guy Taar" name="naam" required>
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Email adres</label>
+        <div class="control">
+          <input class="input" type="email" placeholder="bv. guytaar@gmail.com" name="email">
+        </div>
+      </div>
+
+      <div class="field">
+          <label class="label">Prijs</label>
+          <div class="control">
+            <input class="input" type="number" placeholder="" name="prijs">
+          </div>
+        </div>  
+
+          
+
+        <input class="button is-primary" type="submit" value="Verzend">
+
+        <input type="hidden" name="_next" value="bedankt.html" />
+
+        <input type="hidden" name="_language" value="nl" />
+
+      </form>
+         
+       
+
+    </div>
+
+    <script>
+        
+        var date = new Date();
+
+        var day = date.getDate();
+        var month = date.getMonth() + 1;
+        var year = date.getFullYear();
+
+        if (month < 10) month = "0" + month;
+        if (day < 10) day = "0" + day;
+
+        var today = year + "-" + month + "-" + day;       
+        document.getElementById("datePicker").value = today;
+    
+    </script>
+   
+</body>
+</html>
