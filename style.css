@@ -3,6 +3,24 @@ body {
   }
   
   /* hero style */
+  .hero {
+    background-image: url(https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1404&q=80);
+    height: 100vh;
+    font-family: 'Dokdo', cursive;
+  }
+
+  .hero:before {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    display: block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+}
+
+
   .is-horizontal-center {
     justify-content: center;
   }
@@ -36,20 +54,32 @@ body {
       padding-bottom: 10px;
     }
   }
+
+  /* font awesome icons style*/
+
+  .fas {
+    padding-right: 25px;
+  }
   
   /* andere */
   .overige {
     font-size: 2em;
     font-weight: bold;
-    text-decoration: underline;
+    
     margin-bottom: -2em;
+    display: inline;
+		position: relative;
+    background-image: linear-gradient(transparent 60%, #209CEE 40%);
+  	background-repeat: repeat-x;
+		background-size: 200% 100%;
+		transition: background-size 1s ease;
   }
 
   
   
   /* footer */
   .footer {
-    padding: 1em;
+    padding: 0em;
   }
 
   /* form style */
