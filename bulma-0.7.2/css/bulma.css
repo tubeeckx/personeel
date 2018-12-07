@@ -1544,6 +1544,14 @@ a.box:active {
   white-space: nowrap;
 }
 
+@media screen and (max-width: 600px) {
+    
+  .button {
+    margin: 0em;
+    font-size: 1.2em;
+  }
+}
+
 .button strong {
   color: inherit;
 }
