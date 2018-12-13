@@ -63,6 +63,11 @@ body {
   .fas {
     padding-right: 25px;
   }
+
+  .button:hover .fas {
+    transform: rotate(360deg);
+    transition-duration: 0.8s;
+  }
   
   /* andere */
   .overige {
@@ -75,6 +80,10 @@ body {
   	background-repeat: repeat-x;
 		background-size: 200% 100%;
 		transition: background-size 1s ease;
+  }
+
+  td {
+    display: block;
   }
 
   
@@ -104,4 +113,9 @@ input[type="submit"] {
 .asterix {
   color:red;
 }
+
+
+
+
+
   
