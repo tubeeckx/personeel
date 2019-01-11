@@ -114,6 +114,11 @@ input[type="submit"] {
   color:red;
 }
 
+input[type="radio"] {
+  transform: scale(2);
+}
+
+
 
 
 
