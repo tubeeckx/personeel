@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bulma-0.7.2\css\bulma.css">
-    <script>UPLOADCARE_PUBLIC_KEY = "ade64a3cc051c50d18df"</script>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="img\logo transp.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img\logo transp.png">
-    
-    <title>Fixit formulier</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bulma-0.7.2\css\bulma.css">
+  <script>UPLOADCARE_PUBLIC_KEY = "ade64a3cc051c50d18df"</script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="img\logo transp.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img\logo transp.png">
+
+  <title>Fixit formulier</title>
 </head>
+
 <body>
 
   <div class="box">
     <form action="https://formspree.io/mstouten@arknet.be" method="POST">
-    <div class="title">
+      <div class="title">
         Fixit formulier
-    </div>
+      </div>
 
-    <div class="subtitle">
-      <span class="asterix">*</span> verplicht
-    </div>
+      <div class="subtitle">
+        <span class="asterix">*</span> verplicht
+      </div>
 
-    <div class="field">
-        <label class="label">Wat is er mis? <span class="asterix">*</span> </label> 
+      <div class="field">
+        <label class="label">Wat is er mis? <span class="asterix">*</span> </label>
         <div class="control">
           <input class="input" type="textarea" placeholder="bv. losse plaat" name="probleem" required>
         </div>
-      </div> 
+      </div>
 
-    <div class="field">
+      <div class="field">
         <label class="label">Naam <span class="asterix">*</span></label>
         <div class="control">
           <input class="input" type="text" placeholder="bv. Guy Taar" name="naam" required>
         </div>
       </div>
-      
+
       <div class="field">
         <label class="label">Email adres</label>
         <div class="control">
@@ -47,48 +49,49 @@
       </div>
 
       <div class="field">
-          <label class="label">Waar doet het probleem zich voor?</label>
-          <div class="control">
-            <input class="input" type="text" placeholder="" name="waar">
-          </div>
-        </div> 
+        <label class="label">Waar doet het probleem zich voor?</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="" name="waar">
+        </div>
+      </div>
 
-        <div class="field">
-            <label class="label">Mogelijke oplossing?</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="" name="oplossing">
-            </div>
-          </div> 
+      <div class="field">
+        <label class="label">Mogelijke oplossing?</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="" name="oplossing">
+        </div>
+      </div>
 
-        <div class="field">
-            <label class="label">Upload hier je foto</label>
-            <div class="is-size-6">Je kan meerdere foto's uploaden</div>
-            <div class="control">
-                <input type="hidden" role="uploadcare-uploader" name="preventiefotos" data-multiple="true" /> 
-            </div>
-          </div>
+      <div class="field">
+        <label class="label">Upload hier je foto</label>
+        <div class="is-size-6">Je kan meerdere foto's uploaden</div>
+        <div class="control">
+          <input type="hidden" role="uploadcare-uploader" name="preventiefotos" data-multiple="true" />
+        </div>
+      </div>
 
-          
 
-        <input class="button is-primary" type="submit" value="Verzend">
 
-        <input type="hidden" name="_next" value="bedankt.html" />
+      <input class="button is-primary" type="submit" value="Verzend">
 
-        <input type="hidden" name="_language" value="nl" />
+      <input type="hidden" name="_next" value="bedankt.html" />
 
-      </form>
-         
-       
+      <input type="hidden" name="_language" value="nl" />
 
-    </div>
+    </form>
 
-    <!-- script voor uploaden van fotos via uploadcare-->
 
-    <script>
-        UPLOADCARE_LOCALE = "nl";
-        UPLOADCARE_TABS = "camera file gphotos";
-        UPLOADCARE_PUBLIC_KEY = "ade64a3cc051c50d18df";
-      </script>
-      <script charset="utf-8" src="//ucarecdn.com/libs/widget/3.6.1/uploadcare.full.min.js"></script>
+
+  </div>
+
+  <!-- script voor uploaden van fotos via uploadcare-->
+
+  <script>
+    UPLOADCARE_LOCALE = "nl";
+    UPLOADCARE_TABS = "camera file gphotos";
+    UPLOADCARE_PUBLIC_KEY = "ade64a3cc051c50d18df";
+  </script>
+  <script charset="utf-8" src="//ucarecdn.com/libs/widget/3.6.1/uploadcare.full.min.js"></script>
 </body>
+
 </html>
