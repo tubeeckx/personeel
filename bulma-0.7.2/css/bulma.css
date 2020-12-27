@@ -20,6 +20,31 @@
   }
 }
 
+@keyframes moveIn {
+  0% {
+    opacity: .1;
+    transform: translateY(550px);
+  }
+  80% {
+    opacity: .8;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animation-move-in {
+  animation: moveIn 1s ease-in-out;
+}
+.animation-move-in-1 {
+  animation: moveIn 1.2s ease-in-out;
+}
+.animation-move-in-2 {
+  animation: moveIn 1.4s ease-in-out;
+}
+
 .delete, .modal-close, .is-unselectable, .button, .file, .breadcrumb, .pagination-previous,
 .pagination-next,
 .pagination-link,
