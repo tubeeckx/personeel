@@ -118,46 +118,7 @@ input[type="radio"] {
   transform: scale(2);
 }
 
-.dropdown {
-  margin-top: 4em;
-  margin-bottom: 4em;
-}
 
-.dropdown-trigger .button {
-  padding: 50px;
-  font-size: 2em;
-  font-weight: bold;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-.dropdown-menu {
-  border: none;
-}
-
-.dropdown-content {
-  box-shadow: none;
-}
-
-.dropdown-item {
-  padding: 20px;
-  font-size: 1.5em;
-}
-
-@media screen and (max-width: 600px) {
-  .dropdown-trigger .button {
-    padding: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0.2em;
-    font-size: 1.6em;
-  }
-
-  .dropdown-item {
-    padding: 10px;
-    font-size: 1.2em;
-  }
-}
 
 
 </style>
