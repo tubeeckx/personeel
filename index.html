@@ -164,12 +164,28 @@
         </div>
     
 
-    <div class="dropdown">
-    <button class="dropbtn">Dropdown</button>
-    <div class="dropdown-content">
-        <a href="#">Option 1</a>
-        <a href="#">Option 2</a>
+    <div class="column has-text-centered">
+  <div class="dropdown is-hoverable">
+    <div class="dropdown-trigger">
+      <button class="button is-success is-outlined" aria-haspopup="true" aria-controls="dropdown-menu">
+        <span class="icon">
+          <i class="fas fa-bars"></i> <!-- You can choose an icon here -->
+        </span>
+        <span>Dropdown Button</span>
+      </button>
     </div>
+    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+      <div class="dropdown-content">
+        <a href="#" class="dropdown-item">
+          Dropdown item 1
+        </a>
+        <a class="dropdown-item">
+          Dropdown item 2
+        </a>
+        <!-- ... other items -->
+      </div>
+    </div>
+  </div>
 </div>
 
     <div class="column">
